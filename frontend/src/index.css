@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Inter", system-ui, -apple-system, sans-serif;
+  
+  --color-terracotta-50: #fdf5f2;
+  --color-terracotta-100: #faebe5;
+  --color-terracotta-200: #f5d6cc;
+  --color-terracotta-300: #eda994;
+  --color-terracotta-400: #e37e5d;
+  --color-terracotta-500: #c85a32;
+  --color-terracotta-600: #b84f29;
+  --color-terracotta-700: #a9441e;
+  --color-terracotta-800: #86361a;
+  --color-terracotta-900: #6d2f19;
+  --color-terracotta-950: #3c160b;
+
+  --color-sandy-50: #faf8f5;
+  --color-sandy-100: #f5ebe0;
+  --color-sandy-200: #ebd8c3;
+  --color-sandy-300: #ddbf9d;
+  --color-sandy-400: #cda275;
+  --color-sandy-500: #be8952;
+  --color-sandy-600: #b07541;
+  --color-sandy-700: #925d33;
+  --color-sandy-800: #764b2b;
+  --color-sandy-900: #603e25;
+  --color-sandy-950: #331f12;
+
+  --color-charcoal-50: #f6f6f6;
+  --color-charcoal-100: #e7e7e8;
+  --color-charcoal-200: #c3c4c8;
+  --color-charcoal-300: #9fa1a7;
+  --color-charcoal-400: #7a7e87;
+  --color-charcoal-500: #565a66;
+  --color-charcoal-600: #454852;
+  --color-charcoal-700: #34363d;
+  --color-charcoal-800: #2b1b17;
+  --color-charcoal-900: #1b1c1f;
+  --color-charcoal-950: #0f1012;
+
+  --color-brand-success: #1b4d3e;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    background-color: var(--color-sandy-50);
+    color: var(--color-charcoal-800);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+  
+  /* Smooth modern scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-sandy-50);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-sandy-200);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-sandy-400);
+  }
+}
+
+/* Custom dynamic glass effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
