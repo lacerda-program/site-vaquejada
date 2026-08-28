@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mount)",
+      "Bash(touch /mnt/6D8BD7275E6A59BA/PROGRAMACAO/REPO/site-vaquejada/backend/.writetest)",
+      "Bash(rm /mnt/6D8BD7275E6A59BA/PROGRAMACAO/REPO/site-vaquejada/backend/.writetest)",
+      "Bash(rm -f src/main/java/com/sertaotickets/api/controller/SiteController.java src/main/resources/data.sql)",
+      "Bash(./gradlew compileJava -q --offline)",
+      "Bash(./gradlew compileJava --offline --rerun-tasks -q -Porg.gradle.java.compile.args=)",
+      "Bash(javac -version)",
+      "Bash(./gradlew compileJava --offline --rerun-tasks -q)",
+      "Bash(git checkout *)",
+      "Bash(sed -i '$ d' build.gradle)"
+    ]
+  }
+}
